@@ -1,5 +1,5 @@
 main {
-    padding: 1rem;
+    padding: 1rem 10%;
 }
 
 main > .intro {
@@ -8,11 +8,12 @@ main > .intro {
     justify-content: center;
     align-items: center;
 
-    margin: 0 15%;
+    margin-bottom: 4rem;
+    padding: 0 20%;
 }
 
 main > .intro > .identity {
-    flex-basis: 33%;
+    flex-basis: 50%;
     flex-shrink: 1;
     margin-right: 1rem;
 
@@ -56,4 +57,57 @@ main > .intro > .about {
     margin-left: 1rem;
 
     text-align: justify;
+}
+
+main > section:not(.intro) > article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 1rem;
+}
+
+main > section:not(.intro) > article:nth-of-type(even) {
+    flex-flow: row-reverse nowrap;
+}
+
+main > section:not(.intro) > article > img {
+    max-height: 12rem;
+}
+
+main > section:not(.intro) > article > div {
+    position: relative;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    text-align: justify;
+    margin-left: 2rem;
+}
+
+main > section:not(.intro) > article:nth-of-type(even) > div {
+    margin-left: 0;
+    margin-right: 2rem;
+    align-items: flex-end;
+}
+
+main > section:not(.intro) > article > div:before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+
+    background-color: #202020;
+}
+
+main > section:not(.intro) > article:nth-of-type(even) > div:before {
+    left: auto;
+    right: -1rem;
 }

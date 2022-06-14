@@ -13,3 +13,5 @@
 
 - Link icon : https://www.flaticon.com/authors/th-studio
 - Tick icon : https://www.flaticon.com/authors/freepik
+- WASD icon : https://www.flaticon.com/authors/manshagraphics
+- Musical note icon : https://www.flaticon.com/authors/freepik
